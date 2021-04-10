@@ -34,7 +34,7 @@
             <use href="./images/icons.svg/sprite.svg#icon-envelope"></use>
         </svg>
         info@devstudio.com</a></li>
-        
+
     <li class="item tel"> <a class="link" href="tel:+380961111111">
         <svg class="tel-icon" width="10" height="16">
             <use href="./images/icons.svg/sprite.svg#icon-smartphone"></use>
@@ -48,9 +48,9 @@
 <!--Герой-->
     <section class="hero dark-bg">
         <div class="container">
-        <h1 class="hero-title">Эффективные решения <br>для вашего бизнеса </h1>
-         <button type="button" class="button primary">Заказать услугу </button>
-    </div> 
+             <h1 class="hero-title">Эффективные решения <br>для вашего бизнеса </h1>
+            <button data-modal-open type="button" class="button primary">Заказать услугу </button>
+        </div> 
 </section>
 <!--Преимущества Компании-->
 <section class="section">
@@ -82,9 +82,15 @@
     <div class="container">
     <h2 class="section-title">Чем мы занимаемся</h2>
     <ul class="feature-list-company">
-    <li class="cards"> <img src="./images/img.jpg" alt="Человек занимается програмированием" width="370"></li>
-    <li class="cards"> <img src="./images/img(1).jpg" alt="Человек держит телефон и смотрит в ноутбук" width="370"></li>
-    <li class="cards"> <img src="./images/img(2).jpg" alt="Человек в руках держит планшет" width="370"></li> 
+    <li class="cards"> <img src="./images/img.jpg" alt="Человек занимается програмированием" width="370">
+    <span class="thumb"> Десктопные приложения </span> 
+</li>
+    <li class="cards"> <img src="./images/img(1).jpg" alt="Человек держит телефон и смотрит в ноутбук" width="370">
+    <span class="thumb"> Мобильные приложения </span>
+</li>
+    <li class="cards"> <img src="./images/img(2).jpg" alt="Человек в руках держит планшет" width="370">
+    <span class="thumb"> Дизайнерские решения </span>
+</li> 
     </ul> 
 </div>    
 </section>
@@ -354,8 +360,18 @@
 </div>
 </footer>
 
+<!-- Модальное окно -->
 
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button data-modal-close type="button" class="close-back">
+            <svg class="icons" width="11" height="11">
+                <use href="./images/icons.svg/sprite.svg#icon-xxx"></use>
+            </svg>
+        </button>
+    </div>
+</div>
 
-
+<script src="./js/modal.js"></script>
 </body>
 </html>
