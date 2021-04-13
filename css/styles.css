@@ -722,3 +722,49 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
+
+/* textarea {
+  resize: none;
+} */
+
+/* Форма в модальном окне */
+.form {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--title-text-color);
+  margin-bottom: 4px;
+}
+
+.form-field input {
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.form-field input::placeholder {
+  font-style: normal;
+  font-weight: normal;
+
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-field input[type='checkbox'] {
+  width: 16px;
+  height: 15px;
+}
